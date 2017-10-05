@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MakePaintGreatAgain.API.XCommand" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAgAAACBBAAAAIggAACABAAAQgBEEAAQBQEAAAY=</HashCode>
+      <FileName>API\XCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.API.XData" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\XData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.API.XText" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>API\XText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.CntxMenu" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAAAACBAAACQAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\CntxMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PColor" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAgACAAAACAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\PColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PDraw" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\PDraw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PFigure" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\PFigure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PMenu" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQCZAAAEAmBAAAhAAAiCgAACAACAAAAAAgAEAAwBQgA=</HashCode>
+      <FileName>Controls\PMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PPanel" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAACAAAAAAAACAAAACACAAEAAAAAAEAAAABAA=</HashCode>
+      <FileName>Controls\PPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PPicture" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\PPicture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PPlugIn" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAEACAAAAAAAACAAAACAAAAAAAAACAEAAAAAAA=</HashCode>
+      <FileName>Controls\PPlugIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PStatusTrip" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Controls\PStatusTrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PTabData" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\PTabData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PTabMenu" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAAAAAAACBAAACAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Controls\PTabMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PText" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAABAAAACgAACCAAAAACAAASAAAAAgAAA=</HashCode>
+      <FileName>Controls\PText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PToolStrip" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAEACRAAACAEAAAAAEDAAAACAAAAAAAAAAAEAAASEAA=</HashCode>
+      <FileName>Controls\PToolStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PType" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEAAACAAAAAAAACAAAACAAAAAAAIACACAAAAAAA=</HashCode>
+      <FileName>Controls\PType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.PWidth" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAACAAAABAAAA=</HashCode>
+      <FileName>Controls\PWidth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Controls.SaveAndLoad" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACACAACAAAAAAAAACAAAAIAAAA=</HashCode>
+      <FileName>Controls\SaveAndLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Form1" Collapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Program" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Properties.Resources" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MakePaintGreatAgain.Properties.Settings" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.PictureBox" Collapsed="true">
+    <Position X="1.5" Y="6" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.TabPage" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MakePaintGreatAgain.Models.IPlugin" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAQAACABAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\IPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

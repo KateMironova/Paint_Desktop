@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0501188E-E649-4960-B22A-40B9C4DEC700}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MakePaintGreatAgain</RootNamespace>
+    <AssemblyName>MakePaintGreatAgain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\XCommand.cs" />
+    <Compile Include="API\XText.cs" />
+    <Compile Include="Controls\CntxMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CntxMenu.Designer.cs">
+      <DependentUpon>CntxMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Load.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PColor.Designer.cs">
+      <DependentUpon>PColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PDraw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PDraw.Designer.cs">
+      <DependentUpon>PDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PFigure.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PFigure.Designer.cs">
+      <DependentUpon>PFigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPlugIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PPlugIn.Designer.cs">
+      <DependentUpon>PPlugIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PMenu.Designer.cs">
+      <DependentUpon>PMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PPanel.Designer.cs">
+      <DependentUpon>PPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PPicture.Designer.cs">
+      <DependentUpon>PPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PProperty.Designer.cs">
+      <DependentUpon>PProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PStatusTrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PStatusTrip.Designer.cs">
+      <DependentUpon>PStatusTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PTabData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PTabData.Designer.cs">
+      <DependentUpon>PTabData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PTabMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PTabMenu.Designer.cs">
+      <DependentUpon>PTabMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PText.Designer.cs">
+      <DependentUpon>PText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PToolStrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PToolStrip.Designer.cs">
+      <DependentUpon>PToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PType.Designer.cs">
+      <DependentUpon>PType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PWidth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PWidth.Designer.cs">
+      <DependentUpon>PWidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Save.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Save.Designer.cs">
+      <DependentUpon>Save.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginBase\IHost.cs" />
+    <Compile Include="PluginBase\IPlugin.cs" />
+    <Compile Include="PluginBase\PluginManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\CntxMenu.resx">
+      <DependentUpon>CntxMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PColor.resx">
+      <DependentUpon>PColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PPlugIn.resx">
+      <DependentUpon>PPlugIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PMenu.resx">
+      <DependentUpon>PMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PPanel.resx">
+      <DependentUpon>PPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PPicture.resx">
+      <DependentUpon>PPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PProperty.resx">
+      <DependentUpon>PProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PStatusTrip.resx">
+      <DependentUpon>PStatusTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PTabMenu.resx">
+      <DependentUpon>PTabMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PText.resx">
+      <DependentUpon>PText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PToolStrip.resx">
+      <DependentUpon>PToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PType.resx">
+      <DependentUpon>PType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PWidth.resx">
+      <DependentUpon>PWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Save.resx">
+      <DependentUpon>Save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Serialization\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
