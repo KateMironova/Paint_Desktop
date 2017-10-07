@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakePaintGreatAgain", "MakePaintGreatAgain\MakePaintGreatAgain.csproj", "{0501188E-E649-4960-B22A-40B9C4DEC700}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginTextFigure", "PluginTextFigure\PluginTextFigure.csproj", "{A8F1C3B9-674B-44F5-88C1-A40A3F9DF36E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginPictureFigure", "PluginPictureFigure\PluginPictureFigure.csproj", "{F77E3C8B-C2B5-4125-89C0-1D43530D600C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPaint", "TestPaint\TestPaint.csproj", "{E73C261A-BEDB-4122-8411-5C0C49305468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{0164ED39-210A-4A38-8168-DA94E94B385A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +37,19 @@ Global
 		{F77E3C8B-C2B5-4125-89C0-1D43530D600C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F77E3C8B-C2B5-4125-89C0-1D43530D600C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F77E3C8B-C2B5-4125-89C0-1D43530D600C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73C261A-BEDB-4122-8411-5C0C49305468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73C261A-BEDB-4122-8411-5C0C49305468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73C261A-BEDB-4122-8411-5C0C49305468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73C261A-BEDB-4122-8411-5C0C49305468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0164ED39-210A-4A38-8168-DA94E94B385A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0164ED39-210A-4A38-8168-DA94E94B385A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0164ED39-210A-4A38-8168-DA94E94B385A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0164ED39-210A-4A38-8168-DA94E94B385A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41F94EC5-4451-4A1B-80E2-0DFAC0FA6CDE}
 	EndGlobalSection
 EndGlobal
