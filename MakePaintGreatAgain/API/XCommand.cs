@@ -8,29 +8,29 @@ using System.Windows.Forms;
 
 namespace MakePaintGreatAgain.API
 {
-    public class XCommand
+    public class XCommand : ICommand
     {
         public PPanel panel;
         public TabControl pTab;
         public PTabData childTab;
 
 
-        public ActionSave aSave;
-        public ActionLoad aLoad;
-        public ActionSaveToCloud aSaveCloud;
-        public ActionLoadFromCloud aLoadCloud;
-        public ActionSaveSetting aSaveSetting;
-        public ActionLoadSetting aLoadSetting;
-        public ActionExit aExit;
-        public ActionStatus aStatus;
-        public ActionAddDocument aAddDoc;
-        public ActionDeleteDocument aDeleteDoc;
-        public ActionRenameDocument aRenameDoc;
+        public IAction aSave { get; }
+        public IAction aLoad { get; }
+        public IAction aSaveCloud { get; }
+        public IAction aLoadCloud { get; }
+        public IAction aSaveSetting { get; }
+        public IAction aLoadSetting { get; }
+        public IAction aExit { get; }
+        public IAction aStatus { get; }
+        public IAction aAddDoc { get; }
+        public IAction aDeleteDoc { get; }
+        public IAction aRenameDoc { get; }
         public ActionTabFindDocument aTabFind;
         public ActionChangeLang aChangeLang;
         public ActionChangeSkin aChangeSkin;
-        public ActionHelp aHelp;
-        public ActionAbout aAbout;
+        public IAction aHelp { get; }
+        public IAction aAbout { get; }
         public XCommand()
         {
             aSave = new ActionSave(this);
@@ -51,10 +51,10 @@ namespace MakePaintGreatAgain.API
             aAbout = new ActionAbout(this);
         }
        
-        public class ActionSave
+        public class ActionSave: IAction
         {
-            XCommand xcom;
-            public ActionSave(XCommand xcom)
+            ICommand xcom;
+            public ActionSave(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -64,10 +64,10 @@ namespace MakePaintGreatAgain.API
 
             }
         }
-        public class ActionLoad
+        public class ActionLoad : IAction
         {
-            XCommand xcom;
-            public ActionLoad(XCommand xcom)
+            ICommand xcom;
+            public ActionLoad(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -76,10 +76,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("load");
             }
         }
-        public class ActionSaveToCloud
+        public class ActionSaveToCloud : IAction
         {
-            XCommand xcom;
-            public ActionSaveToCloud(XCommand xcom)
+            ICommand xcom;
+            public ActionSaveToCloud(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -88,10 +88,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("saveCloud");
             }
         }
-        public class ActionLoadFromCloud
+        public class ActionLoadFromCloud : IAction
         {
-            XCommand xcom;
-            public ActionLoadFromCloud(XCommand xcom)
+            ICommand xcom;
+            public ActionLoadFromCloud(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -100,10 +100,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("loadCloud");
             }
         }
-        public class ActionSaveSetting
+        public class ActionSaveSetting : IAction
         {
-            XCommand xcom;
-            public ActionSaveSetting(XCommand xcom)
+            ICommand xcom;
+            public ActionSaveSetting(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -112,10 +112,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("saveSetting");
             }
         }
-        public class ActionLoadSetting
+        public class ActionLoadSetting : IAction
         {
-            XCommand xcom;
-            public ActionLoadSetting(XCommand xcom)
+            ICommand xcom;
+            public ActionLoadSetting(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -124,10 +124,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("loadSetting");
             }
         }
-        public class ActionStatus
+        public class ActionStatus : IAction
         {
-            XCommand xcom;
-            public ActionStatus(XCommand xcom)
+            ICommand xcom;
+            public ActionStatus(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -136,10 +136,10 @@ namespace MakePaintGreatAgain.API
 
             }
         }
-        public class ActionExit
+        public class ActionExit : IAction
         {
-            XCommand xcom;
-            public ActionExit(XCommand xcom)
+            ICommand xcom;
+            public ActionExit(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -149,10 +149,10 @@ namespace MakePaintGreatAgain.API
             }
         }
       
-        public class ActionAddDocument
+        public class ActionAddDocument : IAction
         {
-            XCommand xcom;
-            public ActionAddDocument(XCommand xcom)
+            ICommand xcom;
+            public ActionAddDocument(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -161,10 +161,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("add");
             }
         }
-        public class ActionRenameDocument
+        public class ActionRenameDocument : IAction
         {
-            XCommand xcom;
-            public ActionRenameDocument(XCommand xcom)
+            ICommand xcom;
+            public ActionRenameDocument(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -173,10 +173,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("rename");
             }
         }
-        public class ActionDeleteDocument
+        public class ActionDeleteDocument : IAction
         {
-            XCommand xcom;
-            public ActionDeleteDocument(XCommand xcom)
+            ICommand xcom;
+            public ActionDeleteDocument(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -185,10 +185,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("delete");
             }
         }
-        public class ActionTabFindDocument
+        public class ActionTabFindDocument //: IAction
         {
-            XCommand xcom;
-            public ActionTabFindDocument(XCommand xcom)
+            ICommand xcom;
+            public ActionTabFindDocument(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -196,10 +196,10 @@ namespace MakePaintGreatAgain.API
             {
             }
         }
-        public class ActionChangeLang
+        public class ActionChangeLang //: IAction
         {
-            XCommand xcom;
-            public ActionChangeLang(XCommand xcom)
+            ICommand xcom;
+            public ActionChangeLang(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -208,10 +208,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("Lang");
             }
         }
-        public class ActionChangeSkin
+        public class ActionChangeSkin //: IAction
         {
-            XCommand xcom;
-            public ActionChangeSkin(XCommand xcom)
+            ICommand xcom;
+            public ActionChangeSkin(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -220,10 +220,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("Skin");
             }
         }
-        public class ActionHelp
+        public class ActionHelp : IAction
         {
-            XCommand xcom;
-            public ActionHelp(XCommand xcom)
+            ICommand xcom;
+            public ActionHelp(ICommand xcom)
             {
                 this.xcom = xcom;
             }
@@ -232,10 +232,10 @@ namespace MakePaintGreatAgain.API
                 MessageBox.Show("help");
             }
         }
-        public class ActionAbout
+        public class ActionAbout : IAction
         {
-            XCommand xcom;
-            public ActionAbout(XCommand xcom)
+            ICommand xcom;
+            public ActionAbout(ICommand xcom)
             {
                 this.xcom = xcom;
             }

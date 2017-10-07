@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\IAction.cs" />
+    <Compile Include="API\ICommand.cs" />
     <Compile Include="API\XCommand.cs" />
     <Compile Include="API\XText.cs" />
     <Compile Include="Controls\CntxMenu.cs">
