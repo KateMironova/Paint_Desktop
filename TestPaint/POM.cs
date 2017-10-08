@@ -21,6 +21,7 @@ namespace TestPaint
         public static class MenuBar
         {
             public static Menu FileMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File"));
+            public static Menu AddMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Add tab"));
             public static Menu FigureMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Figure"));
             public static Menu TextMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Text"));
             public static Menu WindowMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Window"));

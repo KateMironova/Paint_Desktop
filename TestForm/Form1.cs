@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MakePaintGreatAgain;
 using MakePaintGreatAgain.Controls;
+using MakePaintGreatAgain.API;
 
 namespace TestForm
 {
@@ -21,7 +22,8 @@ namespace TestForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Controls.Add(new PMenu());
+            //Controls.Add(new PMenu());
+            Controls.Add(new PToolStrip());
         }
     }
 }

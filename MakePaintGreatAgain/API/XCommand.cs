@@ -241,7 +241,7 @@ namespace MakePaintGreatAgain.API
             }
             public void ActionPerformed(object sender, EventArgs e)
             {
-                MessageBox.Show("about");
+                MessageBox.Show("about", "about");
             }
         }
     }

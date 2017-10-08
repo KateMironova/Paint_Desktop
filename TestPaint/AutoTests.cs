@@ -1,17 +1,17 @@
 ﻿using TestStack.White;
 using TestStack.White.UIItems.WindowItems;
 using TestStack.White.Factory;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestStack.White.UIItems.Finders;
 using System.Collections.Generic;
 using TestStack.White.UIItems.MenuItems;
 using TestStack.White.UIItems;
 using TestStack.White.UIItems.ListBoxItems;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestPaint
 {
     [TestClass]
-    public class AutoTest
+    public class AutoTests
     {
         public Window window = null;
 
@@ -86,6 +86,5 @@ namespace TestPaint
         {
 
         }
-
     }
 }
