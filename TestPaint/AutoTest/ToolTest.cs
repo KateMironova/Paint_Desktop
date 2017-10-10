@@ -33,7 +33,6 @@ namespace TestPaint.AutoTest
         public void TestExistToolBar()
         {
             List<Button> tools = new List<Button> { POM.ToolBar.NewWindowTool, POM.ToolBar.LoadTool, POM.ToolBar.SaveTool };
-               // POM.ToolBar.FColorTool, POM.ToolBar.FTypeTool, POM.ToolBar.FWidthTool};
             foreach (Button btn in tools)
             {
                 Assert.AreEqual(true, btn.Enabled);
@@ -42,14 +41,16 @@ namespace TestPaint.AutoTest
         [Test]
         public void TestToolBar()
         {
-            TestToolClick(POM.ToolBar.NewWindowTool, "New Window");
+            TestToolClick(POM.ToolBar.NewWindowTool, "New Window", "add");
+            TestToolClick(POM.ToolBar.NewWindowTool, "Save", "save");
+            TestToolClick(POM.ToolBar.NewWindowTool, "Load", "load");
         }
 
-        private void TestToolClick(Button btn, string result)
+        private void TestToolClick(Button btn, string txt, string result)
         {
             btn.Click();
 
-            if (window.GetElement(SearchCriteria.ByText(result)).Current.Name == result)
+            if (window.GetElement(SearchCriteria.ByText(txt)).Current.Name == result)
                 window.Get<Button>(SearchCriteria.ByText("OK")).Click();
         }
     }

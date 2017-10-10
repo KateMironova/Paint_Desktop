@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MakePaintGreatAgain;
 using MakePaintGreatAgain.Controls;
 using MakePaintGreatAgain.API;
+using TestPaint;
 
 namespace TestForm
 {
@@ -22,8 +23,15 @@ namespace TestForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Controls.Add(new PMenu());
-            Controls.Add(new PToolStrip());
+            TestCommand xcom = new TestCommand();
+
+            PMenu pMenu = new PMenu();
+            pMenu.xcom = xcom;
+            Controls.Add(pMenu);
+
+            PToolStrip pTool = new PToolStrip();
+            pTool.xcom = xcom;
+            Controls.Add(pTool);
         }
     }
 }

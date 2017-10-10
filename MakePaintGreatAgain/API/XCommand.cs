@@ -97,7 +97,7 @@ namespace MakePaintGreatAgain.API
             }
             public void ActionPerformed(object sender, EventArgs e)
             {
-                MessageBox.Show("loadCloud");
+                MessageBox.Show("Load from cloud");
             }
         }
         public class ActionSaveSetting : IAction
@@ -253,7 +253,7 @@ namespace MakePaintGreatAgain.API
             }
             public void ActionPerformed(object sender, EventArgs e)
             {
-                MessageBox.Show("about", "about");
+                MessageBox.Show("About");
             }
         }
     }

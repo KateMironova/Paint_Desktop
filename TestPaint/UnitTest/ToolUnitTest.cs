@@ -1,30 +1,31 @@
 ﻿using System;
 using NUnit.Framework;
 using MakePaintGreatAgain.Controls;
-using System.Windows.Forms;
 
-namespace TestPaint
+namespace TestPaint.UnitTest
 {
     [TestFixture]
-    public class UnitTest
+    public class ToolUnitTest
     {
         TestCommand xcom;
-        PMenu menuBar;
+        PToolStrip pTool = new PToolStrip();
+
+       
 
         [SetUp]
         public void SetUp()
         {
             xcom = new TestCommand();
-            menuBar = new PMenu();
+            pTool = new PToolStrip();
         }
 
+        [TestCase("New window", "add")]
         [TestCase("Save", "save")]
+        [TestCase("Load", "load")]
         public void TestMenuFile(string name, string result)
         {
-            ToolStripMenuItem file = menuBar.menuStrip1.Items["File"] as ToolStripMenuItem;
-            file.DropDownItems[name].PerformClick();
+            pTool.toolStrip1.Items[name].PerformClick();
             Assert.AreEqual(result, xcom.result);
         }
-        
     }
 }

@@ -83,6 +83,10 @@
       <Project>{0501188e-e649-4960-b22a-40b9c4dec700}</Project>
       <Name>MakePaintGreatAgain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TestPaint\TestPaint.csproj">
+      <Project>{e73c261a-bedb-4122-8411-5c0c49305468}</Project>
+      <Name>TestPaint</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

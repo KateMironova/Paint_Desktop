@@ -30,9 +30,9 @@ namespace TestPaint
             public static Menu SSaveMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Save");
             public static Menu SLoadMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Load");
             public static Menu SSaveCloudMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Save to cloud");
-            public static Menu SLoadCloudMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Load to cloud");
-            public static Menu SSaveSetMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Save settings to");
-            public static Menu SLoadSetMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Load settings from");
+            public static Menu SLoadCloudMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Load from cloud");
+            public static Menu SSaveSetMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Save setting to");
+            public static Menu SLoadSetMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Load setting from");
             public static Menu SExitMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("File")).SubMenu("Exit");
             public static Menu SColorMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Figure")).SubMenu("Color");
             public static Menu STypeMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Figure")).SubMenu("Type");
@@ -42,7 +42,7 @@ namespace TestPaint
             public static Menu SAlignMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Text")).SubMenu("Text Align");
             public static Menu SColorTxtMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Text")).SubMenu("Text Color");
             public static Menu SAddTabMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Window")).SubMenu("Add tab");
-            public static Menu SDalTabMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Window")).SubMenu("Delete tab");
+            public static Menu SDelTabMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Window")).SubMenu("Delete tab");
             public static Menu SNameTabMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Window")).SubMenu("Rename tab");
             public static Menu SSkinMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Help")).SubMenu("Skin");
             public static Menu SLangMenu => window.MenuBar.MenuItemBy(SearchCriteria.ByText("Help")).SubMenu("Language");
