@@ -13,7 +13,7 @@ namespace MakePaintGreatAgain.Controls
 {
     public partial class PPlugIn : UserControl
     {
-        public XCommand xcom { get; set; }
+        public XCommand xcom = new XCommand();
         public PPlugIn()
         {
             InitializeComponent();

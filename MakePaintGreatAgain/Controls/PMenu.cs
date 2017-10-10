@@ -14,7 +14,6 @@ namespace MakePaintGreatAgain.Controls
     public partial class PMenu : UserControl
     {
         public ICommand xcom { get; set; }
-        public XCommand xxcom { get; set; }
         public PMenu()
         {
             InitializeComponent();
@@ -29,8 +28,8 @@ namespace MakePaintGreatAgain.Controls
             addTabToolStripMenuItem.Click += new EventHandler((s, e) => xcom.aAddDoc.ActionPerformed(s, e));
             deleteTabToolStripMenuItem.Click += new EventHandler((s, e) => xcom.aDeleteDoc.ActionPerformed(s, e));
             renameTabToolStripMenuItem.Click += new EventHandler((s, e) => xcom.aRenameDoc.ActionPerformed(s, e));
-            skinToolStripMenuItem.DropDownItemClicked += new ToolStripItemClickedEventHandler((s, e) => xxcom.aChangeSkin.ActionPerformed(s, e));
-            languageToolStripMenuItem.DropDownItemClicked += new ToolStripItemClickedEventHandler((s, e) => xxcom.aChangeLang.ActionPerformed(s, e));
+            skinToolStripMenuItem.DropDownItemClicked += new ToolStripItemClickedEventHandler((s, e) => xcom.aChangeSkin.ActionPerformed(s, e));
+            languageToolStripMenuItem.DropDownItemClicked += new ToolStripItemClickedEventHandler((s, e) => xcom.aChangeLang.ActionPerformed(s, e));
             helpToolStripMenuItem1.Click += new EventHandler((s, e) => xcom.aHelp.ActionPerformed(s, e));
             aboutToolStripMenuItem.Click += new EventHandler((s, e) => xcom.aAbout.ActionPerformed(s, e));
         }

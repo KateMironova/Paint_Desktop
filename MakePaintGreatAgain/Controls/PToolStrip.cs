@@ -13,7 +13,7 @@ namespace MakePaintGreatAgain.Controls
 {
     public partial class PToolStrip : UserControl
     {
-        public XCommand xcom { get; set; }
+        public ICommand xcom { get; set; }
         public PToolStrip()
         {
             InitializeComponent();

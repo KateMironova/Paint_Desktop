@@ -27,9 +27,9 @@ namespace TestPaint
         public IAction aAddDoc { get; }
         public IAction aDeleteDoc { get; }
         public IAction aRenameDoc { get; }
-        public ActionTabFindDocument aTabFind;
-        public ActionChangeLang aChangeLang;
-        public ActionChangeSkin aChangeSkin;
+        public IAction aTabFind { get; }
+        public IAction aChangeLang { get; }
+        public IAction aChangeSkin { get; }
         public IAction aHelp { get; }
         public IAction aAbout { get; }
 
@@ -189,35 +189,47 @@ namespace TestPaint
                 (xcom as TestCommand).result = "delete";
             }
         }
-        public class ActionTabFindDocument //: IAction
+        public class ActionTabFindDocument : IAction
         {
             ICommand xcom;
             public ActionTabFindDocument(ICommand xcom)
             {
                 this.xcom = xcom;
             }
+            public void ActionPerformed(object sender, EventArgs e)
+            {
+                
+            }
             public void ActionPerformed(object sender, ToolStripItemClickedEventArgs e)
             {
             }
         }
-        public class ActionChangeLang //: IAction
+        public class ActionChangeLang : IAction
         {
             ICommand xcom;
             public ActionChangeLang(ICommand xcom)
             {
                 this.xcom = xcom;
             }
+            public void ActionPerformed(object sender, EventArgs e)
+            {
+
+            }
             public void ActionPerformed(object sender, ToolStripItemClickedEventArgs e)
             {
                 (xcom as TestCommand).result = "Lang";
             }
         }
-        public class ActionChangeSkin //: IAction
+        public class ActionChangeSkin : IAction
         {
             ICommand xcom;
             public ActionChangeSkin(ICommand xcom)
             {
                 this.xcom = xcom;
+            }
+            public void ActionPerformed(object sender, EventArgs e)
+            {
+
             }
             public void ActionPerformed(object sender, ToolStripItemClickedEventArgs e)
             {

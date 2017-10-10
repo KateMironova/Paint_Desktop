@@ -19,9 +19,9 @@ namespace MakePaintGreatAgain.API
         IAction aAddDoc { get; }
         IAction aDeleteDoc { get; }
         IAction aRenameDoc { get; }
-        //IAction aTabFind { get; }
-        //IAction aChangeLang { get; }
-        //IAction aChangeSkin { get; }
+        IAction aTabFind { get; }
+        IAction aChangeLang { get; }
+        IAction aChangeSkin { get; }
         IAction aHelp { get; }
         IAction aAbout { get; }
 
